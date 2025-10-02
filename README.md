@@ -56,6 +56,8 @@ O dashboard facilita a **tomada de decisão**, oferecendo insights claros sobre 
 
 <a href="https://www.linkedin.com/pulse/demonstra%C3%A7%C3%A3o-de-fluxo-caixa-projeto-visualiza%C3%A7%C3%A3o-dados-menezes-jsoue/?trackingId=%2BHdHXZqFQ0aFG9FhJjkgFw%3D%3D">Clique aqui</a> e acesse o artigo no Linkedin.
 
+<a href="https://www.linkedin.com/pulse/projeto-demonstra%C3%A7%C3%A3o-de-fluxo-caixa-do-excel-ao-sql-server-menezes-wljse/?trackingId=K13V8VExTvaiKSxZpR%2F79w%3D%3D">Clique aqui</a> e acesse a 2ª fase do projeto, no Linkedin.
+
 <br><br>
 
 
