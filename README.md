@@ -1,75 +1,119 @@
-# Demonstração de Fluxo de Caixa (DFC) 
+# 💰 Análise de Fluxo de Caixa e Estruturação de Dados
 
-Este projeto tem como objetivo analisar o fluxo de caixa de instituições financeiras atuantes no setor bancário brasileiro, utilizando uma base de dados simulada que reflete operações de entrada e saída de recursos, bem como variações no cenário macroeconômico.
+### Excel → SQL Server → Power BI
 
-<br><br>
+## 📌 Visão Geral
 
-##  Coleta, Tratamento, Limpeza e Transformação de Dados
+Este projeto tem como objetivo estruturar e analisar o fluxo de caixa de instituições financeiras, transformando dados operacionais descentralizados em uma solução analítica confiável e orientada à tomada de decisão.
 
-O projeto começou com a coleta de dados financeiros em **Excel**, importados para o **Power BI** e tratados no **Power Query** para garantir consistência e confiabilidade:  
-<br>
-<img align="left" width="500"  src="https://github.com/camilla-menezes/DFCPortifolio/blob/main/imagens/Captura%20de%20tela%202025-09-16%20213255.png">
+A solução integra diferentes etapas do processo de dados, desde a organização em Excel até a modelagem em SQL Server e visualização em Power BI.
 
+---
 
-- Criação de parâmetro para diretório de arquivos, facilitando atualizações futuras;  <br>
-- Padronização de colunas, tipos de dados e valores monetários;  <br>
-- Remoção de registros duplicados ou inconsistentes;  <br>
-- Categorização simplificada de entradas e saídas.  <br>
-<br>
+## 🎯 Problema de Negócio
 
-O resultado é uma base **limpa e pronta para análise dinâmica**.
+A gestão de fluxo de caixa baseada em planilhas pode gerar:
 
-<br><br>
+* Falta de visibilidade sobre entradas e saídas
+* Dificuldade em acompanhar o saldo ao longo do tempo
+* Risco de inconsistência nos dados
+* Baixa capacidade de antecipar problemas financeiros
 
-##  Criação de Tabelas e Dicionário de Dados
+Este projeto resolve esses desafios ao estruturar os dados e criar uma visão analítica do fluxo financeiro.
 
-Foi estruturado um **modelo estrela**, com tabelas fato e dimensão:  
+---
 
-- **fMovimentos**: consolida todas as transações financeiras por banco, conta e data;  
-- **fSaldoAnterior**: registra os saldos iniciais de cada banco;  
-- **dBancos**: descreve os bancos;  
-- **dContas**: classifica contas e subgrupos contábeis;  
-- **dCalendário**: fornece dimensão temporal completa (ano, mês, dia, trimestre).  
+## 🛠️ Stack e Arquitetura
 
-Um **dicionário de dados** documenta cada coluna, seu tipo e propósito, garantindo clareza e consistência no uso das informações.  
+* Excel (origem dos dados)
+* SQL Server (tratamento e modelagem)
+* Power BI (visualização e análise)
 
+---
 
-<br><br>
+## 🔄 Pipeline de Dados
 
-##  Dashboard Power BI
-<br>
-<img align="right" width="500"  src="https://github.com/camilla-menezes/DFCPortifolio/blob/main/imagens/Captura%20de%20tela%202025-09-16%20212116.png">
-<br>
-O dashboard desenvolvido permite análises dinâmicas e interativas:  
+* Coleta de dados financeiros em Excel
+* Tratamento, limpeza e padronização no Power Query
+* Estruturação em modelo dimensional (Star Schema)
+* Integração com Power BI para análise interativa
 
-- Evolução mensal de entradas e saídas;  
-- Comparativo de saldo por banco;  
-- Saldo Acumulado e Operacional;  
-- Análise detalhada por subgrupos de contas.  
+---
 
+## 🧠 Decisões Analíticas
 
-O dashboard facilita a **tomada de decisão**, oferecendo insights claros sobre o fluxo de caixa.
+* Utilização de modelo estrela para otimizar performance
+* Separação entre tabelas fato (movimentos) e dimensões (bancos, contas e calendário)
+* Estruturação para análise temporal e financeira consistente
+* Uso de DAX para cálculo de saldo, entradas, saídas e fluxo
 
-<br><br>
+---
 
-<a href="https://app.powerbi.com/groups/me/reports/0058e39d-3f17-45c6-bf92-a7a2d5d64568/6513b71b44b8d6896289?experience=power-bi">Clique aqui</a> e acesse a DFC desenvolvida.
+## 📊 Principais Insights
 
-<a href="https://www.linkedin.com/pulse/demonstra%C3%A7%C3%A3o-de-fluxo-caixa-projeto-visualiza%C3%A7%C3%A3o-dados-menezes-jsoue/?trackingId=%2BHdHXZqFQ0aFG9FhJjkgFw%3D%3D">Clique aqui</a> e acesse o artigo no Linkedin.
+* Queda nas entradas em determinados períodos, gerando desequilíbrio no fluxo de caixa
+* Manutenção das saídas mesmo com redução de receita, indicando ausência de ajuste operacional
+* Tendência de saldo negativo ao longo do tempo, sugerindo risco financeiro
+* Concentração de impacto negativo em uma única instituição bancária
 
-<a href="https://www.linkedin.com/pulse/projeto-demonstra%C3%A7%C3%A3o-de-fluxo-caixa-do-excel-ao-sql-server-menezes-wljse/?trackingId=K13V8VExTvaiKSxZpR%2F79w%3D%3D">Clique aqui</a> e acesse a 2ª fase do projeto, no Linkedin.
+---
 
-<br><br>
+## 📈 Recomendações Estratégicas
 
+* Investigar causas da redução de entradas (inadimplência, queda de receita ou fatores externos)
+* Ajustar estrutura de custos e revisar despesas fixas
+* Implementar monitoramento preditivo do fluxo de caixa
+* Revisar estratégia de alocação de recursos entre bancos
 
- 
+---
 
-<br><br>
+## 📸 Preview do Dashboard
 
-##  Ferramentas Utilizadas
+<p align="center">
+  <img src="imagens/Captura de tela 2025-09-16 212116.png" width="900">
+</p>
 
+---
 
-![Power BI Badge](https://img.shields.io/badge/Power%20BI-F2C811?style=for-the-badge&logo=power-bi&logoColor=white)
-![Excel Badge](https://img.shields.io/badge/Excel-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
-![GitHub Badge](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+## 📊 Dashboard
 
+O dashboard permite:
 
+* Análise da evolução de entradas e saídas
+* Comparação de saldo por banco
+* Acompanhamento de saldo acumulado
+* Análise por subgrupos financeiros
+
+---
+
+## 🔗 Projeto Completo
+
+* 🔹 [Acessar dashboard no Power BI](https://app.powerbi.com/groups/me/reports/0058e39d-3f17-45c6-bf92-a7a2d5d64568/6513b71b44b8d6896289?experience=power-bi)
+* 🔹 [Parte 1 – Estruturação e SQL](https://www.linkedin.com/pulse/projeto-demonstra%C3%A7%C3%A3o-de-fluxo-caixa-do-excel-ao-sql-server-menezes-wljse/?trackingId=K13V8VExTvaiKSxZpR%2F79w%3D%3D)
+* 🔹 [Parte 2 – Visualização e análise](https://www.linkedin.com/pulse/demonstra%C3%A7%C3%A3o-de-fluxo-caixa-projeto-visualiza%C3%A7%C3%A3o-dados-menezes-jsoue/?trackingId=%2BHdHXZqFQ0aFG9FhJjkgFw%3D%3D)
+
+---
+
+## 📁 Estrutura do Projeto
+
+data/ → bases de dados
+dashboard/ → arquivo Power BI
+imagens/ → prints do projeto
+docs/ → documentação
+
+---
+
+## 🚀 Possíveis Evoluções
+
+* Automação da ingestão de dados
+* Implementação de modelos preditivos
+* Monitoramento contínuo do fluxo de caixa
+* Integração com sistemas financeiros
+
+---
+
+## 👩‍💻 Sobre
+
+Profissional com sólida capacidade analítica, focada em transformar dados em insights estratégicos e estruturar soluções orientadas à tomada de decisão.
+
+Experiência com Power BI, SQL e análise de dados financeiros.
