@@ -1,6 +1,12 @@
 # Análise de Fluxo de Caixa e Estruturação de Dados
 
-### Excel → SQL Server → Power BI
+### Preview do Dashboard
+
+<p align="center">
+  <img src="imagens/Captura de tela 2025-09-16 212116.png" width="900">
+</p>
+
+---
 
 ## Visão Geral
 
@@ -64,14 +70,6 @@ Este projeto resolve esses desafios ao estruturar os dados e criar uma visão an
 * Ajustar estrutura de custos e revisar despesas fixas
 * Implementar monitoramento preditivo do fluxo de caixa
 * Revisar estratégia de alocação de recursos entre bancos
-
----
-
-## Preview do Dashboard
-
-<p align="center">
-  <img src="imagens/Captura de tela 2025-09-16 212116.png" width="900">
-</p>
 
 ---
 
